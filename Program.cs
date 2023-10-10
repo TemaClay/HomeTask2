@@ -16,3 +16,12 @@ string isWeekend(int number)
         return "Да";
     return "Нет";
 }
+
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(SecondDigit(firstNumber));
+
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(ThirdDigit(secondNumber));
+
+int thirdNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(isWeekend(thirdNumber));
