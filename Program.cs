@@ -6,8 +6,8 @@
 string ThirdDigit(int number)
 {
     if (number / 100 == 0)
-        return Convert.ToString(number / 100 % 10);
-    return "третьей цифры нет";
+        return "третьей цифры нет";
+    return Convert.ToString(Convert.ToString(number)[2]);
 }
 
 string isWeekend(int number)
