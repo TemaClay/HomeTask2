@@ -3,11 +3,11 @@
     return number / 10 % 10;
 }
 
-string ThirdDigit(string number)
+string ThirdDigit(int number)
 {
-    if (number.Length < 2)
+    if (number / 100 == 0)
         return "третьей цифры нет";
-    return Convert.ToString(number[2]);
+    return Convert.ToString(Convert.ToString(number)[2]);
 }
 
 string isWeekend(int number)
@@ -20,8 +20,8 @@ string isWeekend(int number)
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(SecondDigit(firstNumber));
 
-string secondString = Console.ReadLine();
-Console.WriteLine(ThirdDigit(secondString));
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(ThirdDigit(secondNumber));
 
 int thirdNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(isWeekend(thirdNumber));
